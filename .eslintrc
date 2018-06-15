@@ -1,0 +1,12 @@
+{
+ "extends": "airbnb",
+    "rules": {
+      "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+      "react/prefer-stateless-function": false,
+      "react/forbid-prop-types": false,
+      "jsx-a11y/click-events-have-key-events": false,
+      "jsx-a11y/no-static-element-interactions": false,
+      "jsx-a11y/alt-text": false,
+      "import/no-extraneous-dependencies": false
+    }
+}

@@ -1,0 +1,31 @@
+@font-face {
+  font-family: Palatino;
+  src: url(/assets/fonts/Palatino.ttc) format('truetype');
+}
+
+@font-face {
+  font-family: 'Copernicus Heavy';
+  src: url('/assets/fonts/Copernicus-Heavy.eot');
+  src: url('/assets/fonts/Copernicus-Heavy.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/Copernicus-Heavy.woff') format('woff'),
+       url('/assets/fonts/Copernicus-Heavy.ttf') format('truetype'),
+       url('/assets/fonts/Copernicus-Heavy.svg#53d86533bbd20bc075f6ce29028572cc') format('svg');
+}
+
+@font-face {
+  font-family: 'FuturaStd Book';
+  src: url('/assets/fonts/FuturaStd-Book.otf');
+  src: url('/assets/fonts/FuturaStd-Book.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'FuturaStd Book Oblique';
+  src: url('/assets/fonts/FuturaStd-BookOblique.otf');
+  src: url('/assets/fonts/FuturaStd-BookOblique.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'FuturaStd Medium';
+  src: url('/assets/fonts/FuturaStd-Medium.otf');
+  src: url('/assets/fonts/FuturaStd-Medium.otf') format('opentype');
+}

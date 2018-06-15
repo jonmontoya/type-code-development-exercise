@@ -1,0 +1,141 @@
+$edit-button-size: 32px;
+
+.editable-title-wrapper {
+  display: flex;
+  flex-flow: column-reverse;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  height: 830px;
+  margin-left: 12.5vw;
+  margin-bottom: 100px;
+
+  .editable-title-word-background {
+    font-family: 'Copernicus Heavy', serif;
+    font-size: 60px;
+    background-image: url(/assets/images/Ji9qebSpSlSbnsWRZnDX__MG_9520.jpg);
+    background-size: 100vw auto;
+    position: absolute;
+    mix-blend-mode: screen;
+    display: none;
+  }
+
+  @supports(mix-blend-mode:screen) {
+    .editable-title-word-background {
+      display: block;
+    }
+  }
+}
+
+.editable-title-button, .editable-title-button:hover, .editable-title-button:active {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  height: $edit-button-size;
+  padding: 0;
+  width: $edit-button-size;
+  color: transparent;
+
+  &.edit {
+    background-color: #f3e13b;
+    background-image: url(/assets/images/pencil.svg);
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+  &.discard {
+    background-color: #e56d3e;
+    background-image: url(/assets/images/x.svg);
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+  &.save {
+    background-color: #a2d05a;
+    background-image: url(/assets/images/checkmark.svg);
+    grid-column-start: 1;
+    grid-row-start: 2;
+
+    &[disabled] {
+      background-color: #4d4d4d;
+    }
+  }
+}
+
+.editable-title {
+  display: grid;
+  font-family: 'Copernicus Heavy', serif;
+  font-size: 60px;
+  grid-template-columns: $edit-button-size auto;
+  grid-template-rows: $edit-button-size auto;
+  width: 650px;
+
+  .editable-title-title {
+    display: block;
+    filter: drop-shadow(0 -10px 0 white);
+    grid-column-start: 2;
+    grid-row-start: 2;
+    margin-top: 10px;
+    overflow: hidden;
+
+    .editable-title-word {
+      display: inline-block;
+      background-color: white;
+      padding: 0 5px;
+    }
+  }
+}
+
+.editable-title-form {
+  font-family: 'Copernicus Heavy', serif;
+  font-size: 60px;
+  width: 650px;
+  display: grid;
+  grid-template-columns: $edit-button-size auto;
+  grid-template-rows: $edit-button-size $edit-button-size auto;
+
+  .editable-title-fields {
+    background-color: white;
+    grid-column-start: 2;
+    grid-row-start: 3;
+    padding: 20px;
+    width: 750px;
+  }
+
+  .editable-title-title-field {
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+
+    .editable-title-title-input {
+      background-color: #f9f9f9;
+      border: 1px solid #cbcbcb;
+      font-family: 'Copernicus Heavy', serif;
+      font-size: 30px;
+      height: 75px;
+      line-height: 75px;
+      outline: none;
+      padding: 0 16px;
+      width: 100%;
+    }
+  }
+
+  .editable-title-slug-field {
+    color: #cbcbcb;
+    font-family: 'FuturaStd Medium', sans-serif;
+    font-size: 14px;
+    width: 100%;
+
+    .editable-title-slug-input {
+      border: none;
+      margin-left: 5px;
+      color: #666666;
+      width: 650px;
+
+      &::placeholder {
+        color: #cbcbcb;
+        font-family: 'FuturaStd Book Oblique', sans-serif;
+      }
+    }
+  }
+}
